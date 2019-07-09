@@ -2,7 +2,7 @@ import cv2
 import sys
 
 print("Starting")
-video = cv2.VideoCapture("rtsp://10.90.131.41:554/ch0_0.h264")
+video = cv2.VideoCapture("rtsp://10.90.131.159:554/ch0_0.h264")
 if not video.isOpened():
     print("Error could not open video")
     sys.exit()
@@ -20,6 +20,11 @@ ok = tracker.init(frame, bbox)          # iniitialize bounding box
 
 def track_loop():
     print("Starting tracking loop")
+    global tracker
+    global video
+    global ok
+    global frame
+    global bbox
     while True:
         ok, frame = video.read()
         if not ok:
