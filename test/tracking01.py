@@ -1,6 +1,7 @@
 import cv2
 import sys
 
+#"lets make som random changes"
 print("Starting")
 video = cv2.VideoCapture("rtsp://10.90.131.159:554/ch0_0.h264")
 if not video.isOpened():
