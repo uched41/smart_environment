@@ -1,0 +1,8 @@
+prefix=/home/innopolis/smart_environment/ros_ws/install
+
+Name: smartenv
+Description: Description of smartenv
+Version: 0.0.0
+Cflags: -I/home/innopolis/smart_environment/ros_ws/install/include
+Libs: -L/home/innopolis/smart_environment/ros_ws/install/lib 
+Requires: 

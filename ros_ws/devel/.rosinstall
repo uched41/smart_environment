@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/innopolis/smart_environment/ros_ws/devel/setup.sh
